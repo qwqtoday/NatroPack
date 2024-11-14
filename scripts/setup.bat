@@ -28,3 +28,6 @@ if '%errorlevel%' NEQ '0' (
 
 net localgroup /add natro
 echo Added natro local group
+
+mkdir "C:\NatroPack\bin"
+curl "https://www.donkz.nl/download/remote-desktop-plus/" -o "C:\NatroPack\bin\rdp.exe"
