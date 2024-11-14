@@ -26,7 +26,7 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 
 set username=%1
-net user /add %username% 
+net user /add %username% 123456
 net localgroup /add "Remote Desktop Users" %username%
 net localgroup /add natro %username%
 
