@@ -32,5 +32,3 @@ IF [%1] == [] set /p "username=Enter username:"
 net user /add %username% %password%
 net localgroup /add "Remote Desktop Users" %username%
 net localgroup /add natro %username%
-
-robocopy /e /copyall "C:\NatroPack\files\Natro Macro" "C:\Users\%username%\Desktop\Natro Macro"
