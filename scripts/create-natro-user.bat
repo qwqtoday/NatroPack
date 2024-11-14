@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-set /p "password=<C:\NatroPack\data\password.txt"
+set /p password=<C:\NatroPack\data\password.txt
 
 set username=%1
 IF [%1] == [] set /p "username=Enter username:"

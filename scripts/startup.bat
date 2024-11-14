@@ -1,6 +1,6 @@
 @echo off
 
-set /p "password=<C:\NatroPack\data\password.txt"
+set /p password=<C:\NatroPack\data\password.txt
 
 setlocal enabledelayedexpansion
 set b=0
