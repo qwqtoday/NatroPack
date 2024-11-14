@@ -26,6 +26,7 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 
 set username=%1
+IF [%1] == [] set /p "username=Enter username:"
 net user /add %username% 123456
 net localgroup /add "Remote Desktop Users" %username%
 net localgroup /add natro %username%
