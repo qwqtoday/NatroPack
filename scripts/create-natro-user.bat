@@ -31,4 +31,4 @@ net user /add %username% 123456
 net localgroup /add "Remote Desktop Users" %username%
 net localgroup /add natro %username%
 
-robocopy /e "C:\NatroPack\files\Natro Macro" "C:\Users\%username%\Desktop\Natro Macro"
+robocopy /e /copyall "C:\NatroPack\files\Natro Macro" "C:\Users\%username%\Desktop\Natro Macro"
