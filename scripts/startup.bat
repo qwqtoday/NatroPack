@@ -10,7 +10,7 @@ for /f %%a in ('net localgroup natro') do (
         IF "%%a"=="The" (
             goto break
         )
-        C:\NatroPack\bin\rdp.exe /v:127.0.0.!i! /u:%%a /p:%password% /w:1280 /h:720
+        C:\NatroPack\bin\rdp.exe /v:127.0.0.!i! /u:%%a /p:%password% /w:1920 /h:1080
         set /a i=i+1
     )
     if "%%a"=="-------------------------------------------------------------------------------" (
