@@ -33,5 +33,6 @@ mkdir "C:\NatroPack\bin"
 curl "https://www.donkz.nl/download/remote-desktop-plus/" -o "C:\NatroPack\bin\rdp.exe"
 
 mkdir "C:\NatroPack\data"
+mkdir "C:\NatroPack\data\users"
 set /p "password=Enter Natro Password: "
 echo %password% > C:\NatroPack\data\password.txt

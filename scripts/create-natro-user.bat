@@ -28,7 +28,10 @@ if '%errorlevel%' NEQ '0' (
 set /p password=<C:\NatroPack\data\password.txt
 
 set username=%1
-IF [%1] == [] set /p "username=Enter username:"
+IF [%1] == [] set /p "username=Enter username: "
 net user /add %username% %password%
 net localgroup /add "Remote Desktop Users" %username%
 net localgroup /add natro %username%
+
+
+C:\NatroPack\scripts\reset-user-data.bat %username%
