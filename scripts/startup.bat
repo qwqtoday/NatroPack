@@ -3,8 +3,10 @@
 set /p password=<C:\NatroPack\data\password.txt
 
 setlocal EnableDelayedExpansion
+
 set b=0
 set i=2
+
 for /f %%a in ('net localgroup natro') do (
     IF "!b!"=="1" (
         IF "%%a"=="The" (
@@ -18,6 +20,7 @@ for /f %%a in ('net localgroup natro') do (
         set b=1
     )
 )
+
 :break
 
 endlocal
