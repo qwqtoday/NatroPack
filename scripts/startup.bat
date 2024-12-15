@@ -13,7 +13,7 @@ for /f %%a in ('net localgroup natro') do (
             goto break
         )
 
-        start cmd /c "C:\NatroPack\scripts\connect-user.bat 127.0.0.!i! %%a %password%"
+        start cmd /c "C:\NatroPack\scripts\connect-user.bat 127.0.0.!i! %%a "%password%""
         set /a i=i+1
     )
     if "%%a"=="-------------------------------------------------------------------------------" (
