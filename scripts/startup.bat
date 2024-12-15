@@ -1,4 +1,4 @@
-@echo off
+@echo on
 
 set /p password=<C:\NatroPack\data\password.txt
 
