@@ -2,7 +2,7 @@
 
 set /p password=<C:\NatroPack\data\password.txt
 
-setlocal enabledelayedexpansion
+setlocal EnableDelayedExpansion
 set b=0
 set i=2
 for /f %%a in ('net localgroup natro') do (
