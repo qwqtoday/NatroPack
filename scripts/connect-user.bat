@@ -1,5 +1,5 @@
-@echo on
 setlocal EnableDelayedExpansion
+@echo off
 
 set ip=%1
 set username=%2
