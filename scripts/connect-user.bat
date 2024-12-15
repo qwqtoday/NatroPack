@@ -1,3 +1,4 @@
+@echo off
 set ip=%1
 set username=%2
 set password=%3
